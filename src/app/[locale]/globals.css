@@ -1,0 +1,118 @@
+:root {
+  --black-purple: #302a4c;
+  --dark-purple: #561689;
+  --light-purple: #6c2dba;
+  --white-purple: #f0d4ff;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #60697b;
+  --gray-second: #aab0bc;
+  --red: #ff0000;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin-top: 84px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.logo_card {
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.swiper {
+  margin: 40px 0;
+  width: 100% !important;
+  height: 360px !important;
+}
+
+.swiper-slide {
+  min-height: 320px !important;
+  height: fit-content !important;
+  padding: 40px;
+  background: var(--black-purple);
+  border-radius: 8px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--light-purple) !important;
+}
+
+.iti {
+  width: 100%;
+}
+
+.iti__selected-dial-code {
+  font-size: 16px;
+  line-height: normal;
+  color: var(--gray);
+}
+
+.iti__tel-input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid var(--gray);
+  font-size: 16px;
+  color: var(--gray);
+  transition: all 0.1s ease;
+
+  &:user-invalid {
+    outline: 2px solid var(--red);
+    border: 2px solid var(--red);
+
+    .span {
+      display: block;
+    }
+  }
+}
+
+.iti__tel-input:focus {
+  border: 2px solid var(--light-purple);
+  outline: none;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
